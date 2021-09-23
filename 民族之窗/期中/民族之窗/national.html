@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>民族之窗</title>
+	<style>
+		* {
+			margin: 0px;
+			padding: 0px;
+		}
+
+		.container {
+			position: absolute;
+			top: 50px;
+			left: 80px;
+			width: 1200px;
+			height: 600px;
+			background: rgba(215, 183, 155, 0.8);
+			text-align: center;
+		}
+
+		.btn {
+			background-color: #B7CB93;
+			color: #7030A0;
+			font-size: 20px;
+			width: 150px;
+			height: 90px;
+			margin: 20px;
+			border-radius: 10%;
+		}
+
+		.trans {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+
+		.before {
+			position: relative;
+			right: 110px;
+			bottom: 30px;
+			display: inline-block
+		}
+
+		.left {
+			width: 0;
+			height: 0;
+			border-top: 21px solid transparent;
+			border-right: 28px solid #4472C4;
+			border-bottom: 21px solid transparent;
+			display: inline-block
+		}
+
+		.chang1 {
+			position: relative;
+			text-align: center;
+			left: -5px;
+			top: -13px;
+			height: 20px;
+			width: 50px;
+			background-color: #4472C4;
+			display: inline-block
+		}
+
+		.after {
+			position: relative;
+			right: 100px;
+			bottom: 30px;
+			display: inline-block
+		}
+
+		.right {
+			width: 0;
+			height: 0;
+			border-top: 21px solid transparent;
+			border-left: 28px solid #4472C4;
+			border-bottom: 21px solid transparent;
+			display: inline-block
+		}
+		.chang2 {
+			position: relative;
+			text-align: center;
+			left: 5px;
+			top: -13px;
+			height: 20px;
+			width: 50px;
+			background-color: #4472C4;
+			display: inline-block
+		}
+	</style>
+	<script type="text/javascript">
+		var noApplicationRecord = document.getElementById('noApplicationRecord')
+
+		//模拟数据,
+		var data = ["汉族", "满族", "蒙古族", "回族", "藏族", "维吾尔族", "苗族", "彝族", "壮族", "布依族", "侗族", "瑶族", "白族", "土家族", "哈尼族", "哈萨克族", "傣族", "黎族", "傈僳族", "佤族", "畲族", "高山族", "拉祜族", "水族", "东乡族", "纳西族", "景颇族", "柯尔克孜族", "土族", "达斡尔族", "仫佬族", "羌族", "布朗族", "撒拉族", "毛南族", "仡佬族", "锡伯族", "阿昌族", "普米族", "朝鲜族", "塔吉克族", "怒族", "乌孜别克族", "俄罗斯族", "鄂温克族", "德昂族", "保安族", "裕固族", "京族", "塔塔尔族", "独龙族", "鄂伦春族", "赫哲族", "门巴族", "珞巴族", "基诺族"];
+		function getnoApplicationData() {
+			var father = document.getElementsByClassName("container")[0];
+			for (var i = 0; i < 18; i++) {
+				var targetID = document.createElement("button");
+				targetID.className = "btn";
+				targetID.innerText = data[i];
+				father.appendChild(targetID);
+			}
+		}
+	</script>
+</head>
+
+<body onload="getnoApplicationData()">
+	<img src="./56.jpg" style="position:fixed; height: 100%;width: 100%; z-index: -1;">
+	<div class="container">
+		<h2>选择一个您感兴趣的名族，了解<br>
+			咱们大家庭的一员吧
+		</h2>
+		<div class="trans">
+			<div class="before">
+				<div class="left"></div>
+				<div class="chang1">上一页</div>
+			</div>
+			<div class="after">
+				<div class="chang2">下一页</div>
+				<div class="right"></div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
