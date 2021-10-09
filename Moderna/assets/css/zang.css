@@ -1,0 +1,29 @@
+/* 封面背景大图 */
+#hero::after{
+    background: linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.4)), url("../img/布达拉宫.jpeg") center top no-repeat !important;
+    background-size: cover !important;
+}
+/* 藏族起源图片 */
+.orign{
+    margin-top: 30px;
+    height: 65%;
+}
+/* 吐蕃时期图片 */
+.tufan{
+    margin-top: 60px;
+}
+/* 宋元时期图片 */
+.song{
+    margin-top: 30px;
+    height: 60%;
+}
+/* 达赖时期图片 */
+.dalai{
+    height: 80%;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+/* 近代图片 */
+.jindai{
+    margin-top: 80px;
+}
